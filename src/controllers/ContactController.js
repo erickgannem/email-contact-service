@@ -4,8 +4,8 @@ class ContactController {
   async send(request, response) {
     console.log(process.env)
     // const auth = {
-    //   user: 'informaticasgcv@gmail.com',
-    //   pass: 'InformaticaSG82B.',
+    //   user: 
+    //   pass: 
     // }
     // const transporter = nodemailer.createTransport({
     //   host: 'smtp.gmail.com',
