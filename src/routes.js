@@ -1,7 +1,8 @@
 import { Router } from 'express';
+import ContactController from './controllers/ContactController.js';
 
 const routes = Router();
 
-routes.get('/', (req, res) => res.send('Hello World'));
+routes.post('/contact', ContactController.send);
 
 export default routes;
