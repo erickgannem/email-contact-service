@@ -13,7 +13,7 @@ export default class App {
   }
 
   middlewares() {
-    this.server.use((_, __, next) => loadEnv(next, dotenv));
+    this.server.use(loadEnv(dotenv));
     this.server.use(express.json());
     this.server.use(cors());
   }

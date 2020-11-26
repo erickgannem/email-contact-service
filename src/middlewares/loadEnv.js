@@ -1,4 +1,6 @@
-export default function loadEnv(next, dotenv) {
-  dotenv.config();
-  next();
+export default function loadEnv(dotenv) {
+  return function(_, __, next) {
+    dotenv.config();
+    next();
+  }
 }
