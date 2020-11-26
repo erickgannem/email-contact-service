@@ -15,7 +15,9 @@ export default class App {
   middlewares() {
     this.server.use(loadEnv(dotenv));
     this.server.use(express.json());
-    this.server.use(cors());
+    this.server.use(cors({
+      origin: process.env.CORS_ORIGIN,
+    }));
   }
 
   routes() {
